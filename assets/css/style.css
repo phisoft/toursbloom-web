@@ -82,6 +82,26 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 768px) {
+  #packages h2, p {
+    margin-top: 5px;
+    text-align: center;
+  }
+  #dashboard h2, p {
+    margin-top: 5px;
+    text-align: center;
+  }
+  #bookings h2, p {
+    margin-top: 5px;
+    text-align: center;
+  }
+  #promotions h2, p {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
