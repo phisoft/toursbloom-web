@@ -82,6 +82,26 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 768px) {
+  #packages h2, p {
+    margin-top: 5px;
+    text-align: center;
+  }
+  #dashboard h2, p {
+    margin-top: 5px;
+    text-align: center;
+  }
+  #booking h2, p {
+    margin-top: 5px;
+    text-align: center;
+  }
+  #promotion h2, p {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -896,6 +916,7 @@ section {
 .footer .copyright,
 .footer .credits {
   font-size: 14px;
+  margin-top: 20px;
 }
 
 .social a {
@@ -909,6 +930,7 @@ section {
   transition: 0.3s background ease;
   color: #0d1e2d;
   line-height: 0;
+  
 }
 .social a span {
   display: inline-block;
@@ -924,3 +946,48 @@ section {
 .social a i {
   line-height: 0;
 }
+
+.row-social-info {
+  display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+margin-right: -15px;
+margin-left: -15px;
+/* align-items: center; */
+justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+
+  #about {
+    text-align: center;
+  }
+
+  .about-footer {
+    text-align: center;
+  }
+
+  #follow-us {
+   
+    text-align: center;
+  }
+  
+  .row-social-info {
+    -ms-flex-order: 1;
+    order: 1;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 3rem !important;
+    justify-content: center;
+    display: flex;
+    grid-column-gap: 100px;
+  }
+
+  .cta-section {
+    text-align: center;
+}
+
+
