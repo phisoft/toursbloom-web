@@ -702,6 +702,11 @@ header
       /* margin-left: 30px; */
       max-width: 60%;
       width: 75%;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-crisp-edges;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: pixelated;
+      -ms-interpolation-mode: nearest-neighbor;
     }
   }
 
@@ -985,6 +990,11 @@ about
   position: relative;
   max-width: 100%;
   margin-bottom: 40px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .features-item h4 {
@@ -1027,6 +1037,35 @@ Service
 
 #service {
   padding: 100px 0px;
+}
+
+#service img {
+  filter: none;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+  max-width: 130%;
+  width: 100%;
+  /* image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast; */
+  /* image-rendering: pixelated; */
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+@media(min-width: 992px) {
+  #service img {
+    filter: none;
+    -webkit-filter: blur(-0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+    max-width: 140%;
+    width: 140%;
+    position: relative;
+    right: 17vh;
+  }
 }
 
 @media (max-width: 392px) {
@@ -1153,6 +1192,11 @@ testimonials
 #testimonials .author img {
   max-width: 120px;
   margin-bottom: -60px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .owl-carousel .owl-nav button.owl-next span {
