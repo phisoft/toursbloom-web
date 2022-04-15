@@ -327,7 +327,7 @@ button.main-button:hover {
 @media (min-width:992px) {
   .center-heading p {
     font-size: 18px;
-    line-height: 1.7rem;
+    line-height: 1.85rem;
     color: #888;
     text-align: center;
   }
@@ -339,6 +339,10 @@ button.main-button:hover {
 header
 --------------------------------------------- 
 */
+
+#header .col-12 {
+  /* background-color: white; */
+}
 
 .background-header {
   background-color: #fff;
@@ -378,7 +382,7 @@ header
 
 .header-area .main-nav {
   min-height: 80px;
-  background: transparent;
+  background: white;
 }
 
 .header-area .main-nav .logo {
@@ -399,16 +403,35 @@ header
 .header-area .main-nav .nav {
   float: left;
   margin-top: 27px;
-  margin-left: 15%;
+  margin-left: 32%;
   margin-right: 0px;
   background-color: #fff;
-  padding: 0px 20px;
+  /* padding: 0px 20px; */
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   position: relative;
+  /* left: 14vh; */
   z-index: 999;
+}
+
+@media (min-width:992px) {
+  .header-area .main-nav .nav {
+    float: left;
+    margin-top: 27px;
+    margin-left: 32%;
+    margin-right: 0px;
+    background-color: #fff;
+    padding: 0px 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    left: 14vh;
+    z-index: 999;
+  }
 }
 
 .header-area .main-nav .nav li {
@@ -664,7 +687,7 @@ header
   }
 
   .header-area {
-    background-color: #f7f7f7;
+    background-color: white;
     padding: 0px 15px;
     height: 80px;
     box-shadow: none;
