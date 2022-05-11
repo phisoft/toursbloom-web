@@ -834,15 +834,16 @@ welcome
   width: 100%;
   height: 100vh;
   min-height: 793px;
-  background-image: url(../images/banner-bg-2.png);
+  background-image: url(../images/header.svg);
   background-repeat: no-repeat;
-  background-position: right top;
+  background-size: cover;
+  position:relative;
 }
 
 .welcome-area .header-text .left-text {
   position: relative;
   align-self: center;
-  margin-top: 35%;
+  margin-top: 30%;
   transform: perspective(1px) translateY(-30%) !important;
 }
 
@@ -857,7 +858,7 @@ welcome
 
 .welcome-area .header-text h1 em {
   font-style: normal;
-  color: #038AAB;
+  color: #4fadc4;
 }
 
 .welcome-area .header-text p {
@@ -888,16 +889,11 @@ welcome
   }
 }
 
-
-
 @media (max-width: 1140px) {
-  .welcome-area {
-    height: auto;
-  }
 
   .welcome-area .header-text {
     width: 92%;
-    padding-top: 793px;
+    padding-top: 500px;
   }
 
   .welcome-area .header-text .left-text {
@@ -906,16 +902,10 @@ welcome
   }
 }
 
-
-
 @media (max-width: 810px) {
-  .welcome-area {
-    background-size: contain;
-  }
 
   .welcome-area .header-text {
-    padding-top: 100%;
-    margin-left: 0;
+    padding-top: 20%;
   }
 
   .container-fluid .col-md-12 {
@@ -938,7 +928,7 @@ welcome
 @media (max-width: 392px) {
   .welcome-area .header-text h1 {
     font-weight: 700;
-    font-size: 49px;
+    font-size: 38px;
     line-height: 70px;
     letter-spacing: 1px;
     margin-bottom: 30px;
@@ -949,7 +939,7 @@ welcome
 @media (max-width: 376px) {
   .welcome-area .header-text h1 {
     font-weight: 700;
-    font-size: 47px;
+    font-size: 38px;
     line-height: 70px;
     letter-spacing: 1px;
     margin-bottom: 30px;
