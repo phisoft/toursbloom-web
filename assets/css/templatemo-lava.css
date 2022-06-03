@@ -294,13 +294,14 @@ button.main-button:hover {
 
 
 .center-heading {
-  margin-bottom: 90px;
+  /* padding-bottom: 90px; */
 }
 
 @media (min-width: 992px) {
   .center-heading {
-    margin-bottom: 200px;
-    margin-top: 0px;
+
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
 }
 
@@ -1057,11 +1058,11 @@ Service
 ---------------------------------------------
 */
 
-.left-image-decor {
-  background-image: url(../images/left-bg-decor-2.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
+.left-image-decor img {
+  /* background-image: url(../images/left-bg-decor-2.png); */
+  /* background-repeat: no-repeat; */
+  /* position: absolute; */
+  /* width: 100%; */
   display: inline-block;
   height: 110%;
   margin-top: -200px;
@@ -1069,6 +1070,7 @@ Service
 
 #service {
   padding: 100px 0px;
+  margin-top: 6.5vh;
 }
 
 #service img {
@@ -1087,6 +1089,11 @@ Service
 }
 
 @media(min-width: 992px) {
+  #service {
+    padding: 0px;
+    margin-top: 40vh;
+  }
+
   #service img {
     filter: none;
     -webkit-filter: blur(-0px);
@@ -1103,6 +1110,7 @@ Service
 @media (max-width: 392px) {
   #service {
     padding: 40px 0px;
+    margin-top: 17vh;
   }
 }
 
@@ -1196,16 +1204,58 @@ Service
 testimonials
 --------------------------------------------
 */
+.col-offset-right-9 {
+  margin-right: 75%;
+  background-position: bottom;
+}
+
+
+@media (max-width: 768px) {
+  .left-bg-1 {
+    background-image: none;
+    display: none;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+  .left-bg-2 {
+    background-image: none;
+    display: none;
+  }
+
+
+  .col-offset-right-9 {
+    margin-right: 75%;
+    background-position: bottom;
+  }
+}
+
+
 .right-image-decor {
-  background-image: url(../images/right-bg-decor-2.png);
+  /* background-image: url(../images/right-bg-decor-2.png); */
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right;
   position: absolute;
   width: 100%;
-  display: inline-block;
   height: 110%;
   margin-top: -200px;
 }
+
+/* @media (max-width:991px) {
+  .right-image-decor {
+    background-image: url(../images/right-bg-decor-2.png);
+    background-repeat: space;
+    background-position: right center;
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    height: 110%;
+    margin-top: -200px;
+    scale: 0.8;
+  }
+} */
 
 #testimonials {
   padding-top: 100px;
@@ -1215,7 +1265,7 @@ testimonials
 
 @media (max-width: 392px) {
   #testimonials {
-    padding-top: 0px;
+    padding-top: 170px;
     position: relative;
     z-index: 9;
   }
