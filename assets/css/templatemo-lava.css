@@ -187,6 +187,7 @@ p {
     font-size: 15px;
     line-height: 28px;
     color: #888;
+    text-align: justify;
   }
 }
 
@@ -1054,9 +1055,21 @@ about
 
 /*
 ---------------------------------------------
-Service
+Service / Features
 ---------------------------------------------
 */
+
+.center-feature-desc {
+  position: relative;
+  top: 0vh;
+}
+
+@media (min-width: 991px) {
+  .center-feature-desc {
+    position: relative;
+    top: 25vh;
+  }
+}
 
 .left-image-decor img {
   /* background-image: url(../images/left-bg-decor-2.png); */
@@ -1118,11 +1131,12 @@ Service
   align-self: center;
 }
 
+/* 
 #service .right-text ul {
   padding-top: 20%;
   padding-right: 5%;
-  margin: 0;
-}
+  margin: auto;
+} */
 
 #service .right-text ul li {
   display: inline-block;
@@ -1133,7 +1147,7 @@ Service
   margin-bottom: 0px;
 }
 
-#service .right-text ul li i {
+#service .icon {
   display: inline-block;
   float: left;
   margin-right: 30px;
