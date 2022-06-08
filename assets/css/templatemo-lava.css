@@ -26,7 +26,116 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"); */
+@font-face {
+  font-family: 'Helios Antique Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/W Foundry  Helios Antique Regular.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Helios Antique Regular Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helios Antique Regular Italic'), url('W Foundry  Helios Antique Regular Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helios Antique Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helios Antique Light'), url('W Foundry  Helios Antique Light.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Helios Antique Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helios Antique Light Italic'), url('W Foundry  Helios Antique Light Italic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Helios Antique Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helios Antique Medium'), url('W Foundry  Helios Antique Medium.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Helios Antique Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helios Antique Medium Italic'), url('W Foundry  Helios Antique Medium Italic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Helios Antique Semi Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/W Foundry  Helios Antique Semi Bold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Helios Antique Semi Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helios Antique Semi Bold Italic'), url('W Foundry  Helios Antique Semi Bold Italic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Helios Antique Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/W Foundry  Helios Antique Bold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Helios Antique Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helios Antique Bold Italic'), url('W Foundry  Helios Antique Bold Italic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Helios Antique Black';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/W Foundry  Helios Antique Black.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Helios Antique Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helios Antique Black Italic'), url('W Foundry  Helios Antique Black Italic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Helios Antique Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/W Foundry  Helios Antique Heavy.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Helios Antique Heavy Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helios Antique Heavy Italic'), url('W Foundry  Helios Antique Heavy Italic.woff') format('woff');
+}
 
 /* 
 ---------------------------------------------
@@ -141,7 +250,7 @@ hgroup {
 
 html,
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Helios Antique Regular', sans-serif;
   font-weight: 400;
   background-color: #fff;
   font-size: 16px;
@@ -151,6 +260,7 @@ body {
 }
 
 a {
+  font-family: 'Helios Antique Semi Bold', sans-serif;
   text-decoration: none !important;
 }
 
@@ -160,6 +270,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Helios Antique Bold', sans-serif;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -169,16 +280,17 @@ ul {
 }
 
 p {
-  font-size: 18px;
+  font-family: 'Helios Antique Regular', sans-serif;
+  font-size: 15px;
   line-height: 25px;
-  color: #888;
+  color: #434159;
 }
 
 @media (max-width: 376px) {
   p {
     font-size: 15px;
     line-height: 26px;
-    color: #888;
+    color: #434159;
   }
 }
 
@@ -186,7 +298,7 @@ p {
   p {
     font-size: 15px;
     line-height: 28px;
-    color: #888;
+    color: #434159;
     text-align: justify;
   }
 }
@@ -196,6 +308,14 @@ p {
 global styles
 --------------------------------------------- 
 */
+.color-primary {
+  color: #038AAB;
+}
+
+.color-secondary {
+  color: #2F455C;
+}
+
 html,
 body {
   background: #fff;
@@ -234,6 +354,7 @@ body {
 }
 
 a.main-button-slider {
+  font-family: 'Helios Antique Regular';
   font-size: 14px;
   border-radius: 25px;
   padding: 15px 25px;
@@ -272,6 +393,7 @@ a.main-button:hover {
 }
 
 button.main-button {
+  font-family: 'Helios Antique Regular', sans-serif;
   outline: none;
   border: none;
   cursor: pointer;
@@ -281,7 +403,7 @@ button.main-button {
   background-color: #038AAB;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 600;
+  /* font-weight: 600; */
   letter-spacing: 1px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -307,6 +429,7 @@ button.main-button:hover {
 }
 
 .center-heading h2 {
+  font-family: 'Helios Antique Black', sans-serif;
   margin-top: 0px;
   text-align: center;
   font-size: 42px;
@@ -322,16 +445,21 @@ button.main-button:hover {
 
 .center-heading p {
   font-size: 15px;
-  color: #888;
+  color: #434159;
   text-align: center;
+
 }
 
 @media (min-width:992px) {
   .center-heading p {
+    font-family: 'Helios Antique Regular', sans-serif;
     font-size: 18px;
-    line-height: 1.85rem;
-    color: #888;
+    line-height: 3rem;
+    color: #434159;
     text-align: center;
+    margin-top: 10vh;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 
@@ -341,10 +469,6 @@ button.main-button:hover {
 header
 --------------------------------------------- 
 */
-
-#header .col-12 {
-  /* background-color: white; */
-}
 
 .background-header {
   background-color: #fff;
@@ -422,7 +546,7 @@ header
   .header-area .main-nav .nav {
     float: left;
     margin-top: 27px;
-    margin-left: 32%;
+    margin-left: 33%;
     margin-right: 0px;
     background-color: #fff;
     padding: 0px 20px;
@@ -433,6 +557,12 @@ header
     position: relative;
     left: 14vh;
     z-index: 999;
+  }
+}
+
+@media (min-width:1440px) {
+  .header-area .main-nav .nav {
+    margin-left: 38%;
   }
 }
 
@@ -867,17 +997,18 @@ welcome
 
 
 .welcome-area .header-text h1 {
-  font-weight: 900;
-  font-size: 49px;
+  font-family: 'Helios Antique Heavy';
+  font-size: 50px;
   line-height: 80px;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-  color: #191a20;
 }
 
-.welcome-area .header-text h1 em {
-  font-style: normal;
-  color: white;
+@media (max-width: 416px) {
+  .welcome-area .header-text h1 {
+    font-family: 'Helios Antique Heavy';
+    font-size: 40px;
+    line-height: 80px;
+  }
+
 }
 
 
@@ -988,6 +1119,50 @@ about
   }
 }
 
+
+
+/*
+---------------------------------------------
+Service / Features
+---------------------------------------------
+*/
+
+.primary-theme-color {
+  background-color: #f2fcff;
+  border-radius: 12px;
+  padding: 4vh;
+}
+
+.secondary-theme-color {
+  background-color: #f7f6f6;
+  border-radius: 12px;
+  padding: 4vh;
+}
+
+@media (min-width: 991px) {
+  .primary-theme-color {
+    border-radius: 0px;
+    height: 100vh;
+  }
+
+  .secondary-theme-color {
+    border-radius: 0px;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 428px) {
+  .primary-theme-color {
+    margin: 2vh;
+  }
+
+  .secondary-theme-color {
+    margin: 2vh;
+  }
+}
+
+
+
 #about .features-icon i {
   position: relative;
   z-index: 10;
@@ -1032,6 +1207,7 @@ about
 }
 
 .features-item h4 {
+  font-family: 'Helios Antique Bold';
   margin-top: 0px;
   font-size: 22px;
   color: #1e1e1e;
@@ -1040,6 +1216,7 @@ about
 
 @media (max-width: 376px) {
   .features-item h4 {
+    font-family: 'Helios Antique Bold';
     margin-top: 0px;
     font-size: 21px;
     color: #1e1e1e;
@@ -1051,13 +1228,6 @@ about
   margin-top: 35px;
   display: inline-block;
 }
-
-
-/*
----------------------------------------------
-Service / Features
----------------------------------------------
-*/
 
 .center-feature-desc {
   position: relative;
@@ -1083,7 +1253,13 @@ Service / Features
 
 #service {
   padding: 100px 0px;
-  margin-top: 6.5vh;
+  margin-top: 16.5vh;
+}
+
+@media (min-width: 991px) {
+  #service {
+    margin-top: 12vh;
+  }
 }
 
 #service img {
@@ -1092,7 +1268,7 @@ Service / Features
   -moz-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
-  max-width: 130%;
+  max-width: 100%;
   width: 100%;
   /* image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
@@ -1102,10 +1278,6 @@ Service / Features
 }
 
 @media(min-width: 992px) {
-  #service {
-    padding: 0px;
-    margin-top: 40vh;
-  }
 
   #service img {
     filter: none;
@@ -1113,17 +1285,18 @@ Service / Features
     -moz-filter: blur(0px);
     -ms-filter: blur(0px);
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
-    max-width: 140%;
-    width: 140%;
+    max-width: 100%;
+    width: 100%;
     position: relative;
-    right: 17vh;
+    /* right: 3vh;*/
+    top: 4vh;
   }
 }
 
 @media (max-width: 392px) {
   #service {
     padding: 40px 0px;
-    margin-top: 17vh;
+    margin-top: 20vh;
   }
 }
 
@@ -1148,29 +1321,29 @@ Service / Features
 }
 
 #service .icon {
-  display: inline-block;
-  float: left;
-  margin-right: 30px;
-  font-size: 50px;
-  color: #038AAB;
+  /* display: inline-block;
+  float: left; */
+  margin-bottom: 10px;
+  font-size: 44px;
+
 }
 
-#service .right-text h4 {
-  font-size: 24px;
-  color: #1e1e1e;
-  margin-bottom: 15px;
-  margin-top: 3px;
-}
-
-@media (max-width: 376px) {
-  #service .right-text h4 {
-    font-size: 21px;
-    color: #1e1e1e;
-    margin-bottom: 15px;
-    margin-top: 3px;
+@media (max-width: 991px) {
+  #service .icon {
+    display: inline-block;
+    position: relative;
+    bottom: 1vh;
+    margin-right: 15px;
+    float: left;
+    font-size: 40px;
   }
 }
 
+#service .right-text h4 {
+  /* color: #038AAB; */
+  /* margin-bottom: 15px; */
+  margin-top: 3px;
+}
 
 #service .left-text ul {
   padding: 0;
@@ -1209,6 +1382,25 @@ Service / Features
     margin-bottom: 15px;
     margin-top: 3px;
   }
+}
+
+#service h4 {
+  font-family: 'Helios Antique Semi Bold';
+  font-size: 26px;
+  text-align: center;
+}
+
+@media (min-width: 991px) {
+  #service h4 {
+    font-family: 'Helios Antique Semi Bold';
+    font-size: 40px;
+    text-align: start;
+  }
+}
+
+#service p {
+  font-size: 16px;
+  line-height: 1.8rem;
 }
 
 
@@ -1419,10 +1611,11 @@ footer .footer-content {
 .contact-form {
   position: relative;
   z-index: 10;
-  padding: 45px;
+  border: 1px solid #eee;
+  padding: 65px;
   border-radius: 5px;
   background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -1477,6 +1670,7 @@ footer .right-content {
 }
 
 .footer-content .right-content h2 {
+  font-family: 'Helios Antique Bold', sans-serif;
   margin-top: 0px;
   margin-bottom: 30px;
   font-size: 42px;
@@ -1568,6 +1762,7 @@ footer .sub-footer p {
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
