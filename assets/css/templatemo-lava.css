@@ -1237,7 +1237,19 @@ Service / Features
 @media (min-width: 991px) {
   .center-feature-desc {
     position: relative;
-    top: 25vh;
+    top: 18vh;
+  }
+}
+
+.center-feature-desc-4 {
+  position: relative;
+  top: 0vh;
+}
+
+@media (min-width: 991px) {
+  .center-feature-desc-4 {
+    position: relative;
+    top: 35vh;
   }
 }
 
@@ -1861,4 +1873,18 @@ preloader
   100% {
     opacity: 0;
   }
+}
+
+.height-130vh {
+  height: auto;
+}
+
+@media (min-width: 991px) {
+  .height-130vh {
+    height: 140vh;
+  }
+}
+
+.text-bold {
+  font-family: 'Helios Antique Bold', sans-serif;
 }

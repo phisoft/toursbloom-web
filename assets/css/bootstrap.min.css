@@ -10074,6 +10074,16 @@ button.bg-dark:hover {
         margin-top: 3rem !important
     }
 
+    .mt-lg-6,
+    .my-lg-6 {
+        margin-top: 4.5rem !important
+    }
+
+    .mt-lg-7,
+    .my-lg-7 {
+        margin-top: 6rem !important
+    }
+
     .mr-lg-5,
     .mx-lg-5 {
         margin-right: 3rem !important
