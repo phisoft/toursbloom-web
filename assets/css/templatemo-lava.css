@@ -361,8 +361,6 @@ a.main-button-slider {
   background-color: #038AAB;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 600;
-  letter-spacing: 1px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1015,7 +1013,7 @@ welcome
 .welcome-area .header-text p {
   font-weight: 400;
   font-size: 17px;
-  color: #7a7a7a;
+  color: snow;
   line-height: 30px;
   letter-spacing: 0.25px;
   margin-bottom: 40px;
@@ -1131,12 +1129,16 @@ Service / Features
   background-color: #f2fcff;
   border-radius: 12px;
   padding: 4vh;
+  display: flex;
+  align-items: center;
 }
 
 .secondary-theme-color {
   background-color: #f7f6f6;
   border-radius: 12px;
   padding: 4vh;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 991px) {
@@ -1229,28 +1231,13 @@ Service / Features
   display: inline-block;
 }
 
-.center-feature-desc {
-  position: relative;
-  top: 0vh;
-}
 
 @media (min-width: 991px) {
-  .center-feature-desc {
-    position: relative;
-    top: 18vh;
-  }
 }
 
 .center-feature-desc-4 {
   position: relative;
   top: 0vh;
-}
-
-@media (min-width: 991px) {
-  .center-feature-desc-4 {
-    position: relative;
-    top: 35vh;
-  }
 }
 
 .left-image-decor img {
@@ -1299,9 +1286,7 @@ Service / Features
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
     max-width: 100%;
     width: 100%;
-    position: relative;
-    /* right: 3vh;*/
-    top: 4vh;
+
   }
 }
 
@@ -1640,7 +1625,6 @@ footer .right-content {
   color: #777;
   font-size: 13px;
   border: 1px solid #eee;
-  background-color: #f7f7f7;
   border-radius: 5px;
   width: 100%;
   height: 50px;
@@ -1887,4 +1871,18 @@ preloader
 
 .text-bold {
   font-family: 'Helios Antique Bold', sans-serif;
+}
+
+.mb-50{
+  margin-bottom: 50px;
+}
+
+.fs-40{
+  font-size: auto;
+}
+
+@media (min-width: 991px) {
+  .fs-40{
+    font-size: 40px;
+  }
 }
