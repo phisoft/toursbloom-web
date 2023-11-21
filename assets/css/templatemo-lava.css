@@ -470,7 +470,7 @@ header
 
 .background-header {
   background-color: #fff;
-  height: 80px !important;
+  height: 140px !important;
   position: fixed !important;
   top: 0px;
   left: 0px;
@@ -488,6 +488,19 @@ header
 }
 
 .background-header .nav li a.active {
+  color: #038AAB !important;
+}
+
+.site-navbar-wrap .site-navbar-top p {
+  font-weight: 400;
+}
+
+.site-navbar-top {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+
+.site-navbar-wrap .site-navbar-top a {
   color: #038AAB !important;
 }
 
@@ -517,6 +530,7 @@ header
   text-transform: uppercase;
   letter-spacing: 2px;
   float: left;
+  margin-left: 5rem;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -543,11 +557,11 @@ header
 @media (min-width:992px) {
   .header-area .main-nav .nav {
     float: left;
-    margin-top: 27px;
+    margin-top: 20px;
     margin-left: 33%;
     margin-right: 0px;
     background-color: #fff;
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -1012,7 +1026,7 @@ welcome
 
 .welcome-area .header-text p {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 20px;
   color: snow;
   line-height: 30px;
   letter-spacing: 0.25px;
@@ -1117,6 +1131,10 @@ about
   }
 }
 
+#about p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
 
 
 /*
@@ -1163,14 +1181,25 @@ Service / Features
   }
 }
 
-
+.features-text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
 #about .features-icon i {
   position: relative;
   z-index: 10;
   font-size: 90px;
   color: #038AAB;
-  margin-bottom: 35px;
+  margin-right: 15px;
+  /* margin-bottom: 35px; */
+}
+
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 992px) {
