@@ -35,6 +35,16 @@
 
   <link rel="stylesheet" href="assets/css/owl-carousel.css">
 
+  <link rel="stylesheet" href="../header/css/animate.css">
+
+  <link rel="stylesheet" href="../header/css/style.css">
+<style>
+.col-a {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+</style>
 </head>
 
 <body>
@@ -51,62 +61,116 @@
 
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky background-header" id="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img class="img-fluid" src="assets/images/logo.svg" alt="toursbloom logo">
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
-              <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
-              <li class="scroll-to-section"><a href="#service" class="menu-item">Features</a></li>
-              <!-- <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Testimonials</a> 
-              </li>-->
-              <!-- <li class="submenu">
-                <a href="javascript:;">Services</a>
-                <ul>
-                  <li><a href="#dashboard" class="menu-item">Dashboard</a></li>
-                  <li><a href="#booking" class="menu-item">Booking</a></li>
-                  <li><a href="#dealandpackages" class="menu-item">Deal and Packages</a></li>
-                </ul>
-              </li> -->
-              <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
-            </ul>
-            <a class='menu-trigger'>
-              <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
+  <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+    <div id="header" class="nav-collapse  nav-solid fadeInDown">
+        <div class="row clearfix">
+            <div class="col-a">
+
+                <!--Logo-->
+                <div id="logo">
+
+                    <!--Logo that is shown on the banner-->
+                    <img src="/toursbloom-web/assets/images/logo.svg" id="banner-logo" alt="Landing Page"/>
+                    <!--End of Banner Logo-->
+
+                    <!--The Logo that is shown on the sticky Navigation Bar-->
+                    <img src="/toursbloom-web/assets/images/favicon.png" id="navigation-logo" alt="Landing Page"/>
+                    <!--End of Navigation Logo-->
+
+                </div>
+                <!--End of Logo-->
+
+                <aside>
+
+                    <!--Social Icons in Header-->
+                    <ul class="social-icons">
+                        <li>
+                            <a target="_blank" title="Facebook" href="https://www.facebook.com/phisoft.my/">
+                                <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="Website" href="https://www.phisoft.my/">
+                                <i class="fa fa-globe fa-1x"></i><span>Website</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="Twitter" href="https://www.linkedin.com/company/phisoft-my/">
+                                <i class="fa fa-linkedin fa-1x"></i><span>Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="Instagram" href="https://www.instagram.com/phisoft.my/">
+                                <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a target="_blank" title="behance" href="http://www.behance.net">
+                                <i class="fa fa-behance fa-1x"></i><span>Behance</span>
+                            </a>
+                        </li> -->
+                    </ul>
+                    <!--End of Social Icons in Header-->
+
+                </aside>
+
+                <!--Main Navigation-->
+                <nav id="nav-main">
+                    <ul>
+                        <li>
+                            <a href="#banner">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#gallery">Gallery</a>
+                        </li> -->
+                        <li>
+                            <a href="#service">Services</a>
+                        </li>
+                        <li>
+                            <a href="#contact-us">Contact Us</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#clients">Clients</a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="#pricing">Pricing</a>
+                        </li> -->
+                    </ul>
+                </nav>
+                <!--End of Main Navigation-->
+
+                <div id="nav-trigger"><span></span></div>
+                <nav id="nav-mobile"></nav>
+
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </div><!--End of Header-->
+
+    <!--Banner Content-->
+    <div id="banner-content home" class="row clearfix">
+
+        <div class="col-60">
+
+            <div class="section-heading">
+                <h1>Optimize Tours, Simplify Operations</h1>
+                <h2>Transform your tour business with<span class="custom-title"> Toursbloom</span>, an all-in-one solution.</h2>
+            </div>
+
+            <!--Call to Action-->
+            <a href="#about" class="button">LEARN MORE</a>
+            <!--End Call to Action-->
+
+        </div>
+
+    </div><!--End of Row-->
+</header>    
   <!-- ***** Header Area End ***** -->
 
   <!-- ***** Welcome Area Start ***** -->
-  <div class="welcome-area" id="welcome">
-
-    <!-- ***** Header Text Start ***** -->
-    <div class="header-text">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 center-desc" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-            <p>Your Premier Tour Package Management Solution</p>
-            <h1 class="text-dark">Welcome to</h1>
-            <h1 class="text-custom">TOURSBLOOM</h1>
-            <a href="#about" class="main-button-slider">KNOW US BETTER</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ***** Header Text End ***** -->
-  </div>
+ 
   <!-- ***** Welcome Area End ***** -->
 
   <!-- ***** Features About Start ***** -->
@@ -117,7 +181,7 @@
           <h2 class="display-5 fw-bold mb-4  color-primary">Our Features</h2>
           <p class="lead">Explore our <span class="color-primary">diverse array of features</span> designed to enhance every aspect of your tour experience, offering seamless convenience and curated delights.</p>
         </div>
-        <div class="row g-4 g-md-5 mt-5">
+        <div class="row g-4 g-md-5 p-0">
           <div class="col-md-6 col-xl-4 px-5 mb-4" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
             <div class="d-flex align-items-center mb-3 mb-md-4 features-icon">
               <i class="fa fa-mobile" aria-hidden="true"></i>
@@ -147,7 +211,7 @@
     <img class="img-fluid" src="assets/images/right-bg-decor-2.png" alt="bg-decor img">
   </div>
   <!-- ***** Left Background Image Start ***** -->
-  <div class="left-bg-1 col-offset-right-9 position-absolute ">
+  <div class="left-bg-1 col-offset-right-9 position-absolute p-0">
     <img data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s" class="img-fluid"
       src="assets/images/left-bg-decor-2.png" alt="image">
   </div>
@@ -249,7 +313,7 @@
   </section>
   <!-- ***** About Us Ends ***** -->
   <!-- ***** Left Background Image Start ***** -->
-  <div class="left-bg-2 col-offset-right-9 position-absolute ">
+  <div class="left-bg-2 col-offset-right-9 position-absolute">
     <img class="img-fluid" src="assets/images/left-bg-decor-2.png" alt="image">
   </div>
 
@@ -379,28 +443,28 @@
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="contact-form">
               <form action="mailto:info@phisoft.my" id="contact" action="" method="post">
-                <div class="row">
-                  <div class="col-md-12 col-sm-12">
+                <div class="row  p-0">
+                  <div class="col-md-12 col-sm-12 p-0">
                     <fieldset>
                       <input name="name" type="text" id="name" placeholder="Full Name" required="">
                     </fieldset>
                   </div>
-                  <div class="col-md-6 col-sm-12">
+                  <div class="col-md-6 col-sm-12" style="padding: 0 20px 0 0;">
                     <fieldset>
                       <input name="Phone" type="tel" id="phone" placeholder="Phone Number" required="">
                     </fieldset>
                   </div>
-                  <div class="col-md-6 col-sm-12">
+                  <div class="col-md-6 col-sm-12" style="padding: 0 0 20px 0;">
                     <fieldset>
                       <input name="email" type="text" id="email" placeholder="E-Mail Address" required="">
                     </fieldset>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-lg-12 p-0">
                     <fieldset>
                       <textarea name="message" rows="6" id="message" placeholder="Your Message" required=""></textarea>
                     </fieldset>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-lg-12 p-0">
                     <fieldset>
                       <button type="submit" id="form-submit" class="main-button">Send Message
                         Now</button>
@@ -434,8 +498,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
+      <div class="row p-0">
+        <div class="col-lg-12 p-0">
           <div class="sub-footer">
             <p>Copyright &copy; 2022 Toursbloom</p>
           </div>
@@ -446,6 +510,8 @@
 
   <!-- jQuery -->
   <script src="assets/js/jquery-2.1.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
 
   <!-- Bootstrap -->
   <script src="assets/js/popper.js"></script>
@@ -461,6 +527,18 @@
   <!-- Global Init -->
   <script src="assets/js/custom.js"></script>
 
+  <script src="../header/js/jquery.1.8.3.min.js"></script>
+  <script src="../header/js/wow.min.js"></script>
+  <script src="../header/js/featherlight.min.js"></script>
+  <script src="../header/js/featherlight.gallery.min.js"></script>
+  <script src="../header/js/jquery.enllax.min.js"></script>
+  <script src="../header/js/jquery.scrollUp.min.js"></script>
+  <script src="../header/js/jquery.easing.min.js"></script>
+  <script src="../header/js/jquery.stickyNavbar.min.js"></script>
+  <script src="../header/js/jquery.waypoints.min.js"></script>
+  <script src="../header/js/images-loaded.min.js"></script>
+  <script src="../header/js/lightbox.min.js"></script>
+  <script src="../header/js/site.js"></script>
 </body>
 
 </html>
