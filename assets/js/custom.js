@@ -51,13 +51,13 @@
 		});
 	}
 
-	$(window).on('resize', function () {
-        if ($(window).width() <= 768) { // Adjust this value based on your breakpoint
-            $('.header-area .nav-contacts').hide(); // Hide nav-contacts when screen size is smaller
-        } else {
-            $('.header-area .nav-contacts').show(); // Show nav-contacts for larger screens
-        }
-    }).resize();
+	// $(window).on('resize', function () {
+    //     if ($(window).width() <= 768) { // Adjust this value based on your breakpoint
+    //         $('.header-area .nav-contacts').hide(); // Hide nav-contacts when screen size is smaller
+    //     } else {
+    //         $('.header-area .nav-contacts').show(); // Show nav-contacts for larger screens
+    //     }
+    // }).resize();
 
 	// Menu elevator animation
 	$('a[href*=\\#]:not([href=\\#])').on('click', function () {
