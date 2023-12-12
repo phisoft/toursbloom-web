@@ -633,7 +633,7 @@ section {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
+/* #header {
   font-size: 13px;
 }
 
@@ -655,10 +655,10 @@ section {
 
 #header nav a:hover {
   opacity: 0.6;
-}
+} */
 
 /*Navigation Solid*/
-
+/* 
 #header.nav-solid [class*='col-'] {
   padding: 0 20px;
 }
@@ -681,11 +681,11 @@ section {
 
 #header.nav-solid nav a:hover {
   opacity: 1;
-}
+} */
 
 /* Social Elements when Solid*/
 
-#header.nav-solid .social-icons a {
+/* #header.nav-solid .social-icons a {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -696,11 +696,11 @@ section {
 #header.nav-solid .social-icons a:hover {
   opacity: 1;
   color: #e4473c;
-}
+} */
 
 /* Responsive Nav Styling */
 
-#nav-trigger {
+/* #nav-trigger {
   display: none;
   text-align: right;
 }
@@ -813,7 +813,7 @@ nav#nav-mobile a {
 nav#nav-mobile a:hover {
   background: #fafafa;
   opacity: 1;
-}
+} */
 
 /* #header {
   height: 80px;
@@ -854,7 +854,7 @@ nav#nav-mobile a:hover {
 /**
 * Desktop Navigation 
 */
-.navbar {
+/* .navbar {
   padding: 0;
 }
 
@@ -964,12 +964,12 @@ nav#nav-mobile a:hover {
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
-}
+} */
 
 /**
 * Mobile Navigation 
 */
-.mobile-nav-toggle {
+/* .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
   cursor: pointer;
@@ -1051,7 +1051,7 @@ nav#nav-mobile a:hover {
 
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
-}
+} 
 
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
@@ -1065,10 +1065,10 @@ nav#nav-mobile a:hover {
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
-}
+}*/
 
 /* Logo Section  */
-#logo {
+/* #logo {
   float: left;
   height: 71px;
   line-height: 66px;
@@ -1107,7 +1107,7 @@ nav#nav-mobile a:hover {
 
 .nav-solid #logo #navigation-logo {
   display: inline-block;
-}
+} */
 
 /*--------------------------------------------------------------
 # Hero Section

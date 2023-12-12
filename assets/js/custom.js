@@ -51,13 +51,13 @@
 		});
 	}
 
-	$(window).on('resize', function () {
-        if ($(window).width() <= 768) { // Adjust this value based on your breakpoint
-            $('.header-area .nav-contacts').hide(); // Hide nav-contacts when screen size is smaller
-        } else {
-            $('.header-area .nav-contacts').show(); // Show nav-contacts for larger screens
-        }
-    }).resize();
+	// $(window).on('resize', function () {
+    //     if ($(window).width() <= 768) { // Adjust this value based on your breakpoint
+    //         $('.header-area .nav-contacts').hide(); // Hide nav-contacts when screen size is smaller
+    //     } else {
+    //         $('.header-area .nav-contacts').show(); // Show nav-contacts for larger screens
+    //     }
+    // }).resize();
 
 	// Menu elevator animation
 	$('a[href*=\\#]:not([href=\\#])').on('click', function () {
@@ -80,6 +80,27 @@
 			}
 		}
 	});
+	$(document).ready(function () {
+		// Smooth scrolling when a navigation link is clicked
+		$('#nav-main a').on('click', function(event) {
+			// Check if the link's href attribute contains a hash (#) and isn't just #
+			if (this.hash !== "" && this.hash !== "#") {
+				event.preventDefault();
+				
+				// Store the hash
+				var hash = this.hash;
+	
+				// Animate scroll to target section
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+				});
+			}
+		});
+	});
+	
 
 	$(document).ready(function () {
 		$('a[href^="#welcome"]').addClass('active');
