@@ -238,7 +238,7 @@ section {
     width: 50%;
 }
 
-.col-3 {
+.col-c {
     width: 33.33%;
 }
 
@@ -282,7 +282,7 @@ section {
     width: 66.66%;
 }
 
-.col-3-4 {
+.col-c-4 {
     width: 75%;
 }
 
@@ -933,6 +933,7 @@ h6 {
 --------------------------------------------------------------*/
 .Feautes{
 	padding-top:0;
+    margin-bottom: 100px !important;
 }
 .Feautes .section-title {
   text-align: center;
@@ -2270,8 +2271,39 @@ blockquote {
         margin-top: 0 !important;
         background-color: #fff !important;
     }
-    .section-heading {
-        padding-top: 3rem;
+    .sectipaddingon-heading {
+        -top: 3rem;
+    }
+     /* ------------------About Us---------------*/
+     #about {
+        background-image: url("../images/about-us-sm.png")!important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 20px !important;
+        /* background-position: left 0 !important; */
+    }
+    #about h1 {
+        font-size: 50px !important;
+        font-weight: 800 !important;
+    }
+    .col-c {
+        width: 100%;
+        /* margin-left: 40px;
+        margin-right: 40px;  */
+    }
+    .col-c:nth-child(2) {
+        display: block !important;
+        width: 100%; 
+        text-align: center;
+        float: right; 
+    }
+    .col-c:nth-child(3) {
+        display: none; 
+    } 
+    #about .section-heading h1::after {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
     /*-----------------Sections-----------------*/
 
@@ -2381,7 +2413,36 @@ blockquote {
         padding-left: 20px;
         padding-right: 20px;
     }
-
+    /* ------------------About Us---------------*/
+    #about {
+        background-image: url("../images/about-us-sm.png")!important;
+        background-repeat: no-repeat;
+        padding-bottom: 20px !important;
+        /* background-position: left 0 !important; */
+    }
+    #about h1 {
+        font-size: 45px !important;
+        font-weight: 800 !important;
+    }
+    .col-c {
+        width: 100%;
+        margin-left: 80px;
+        margin-right: 80px; 
+    }
+    .col-c:nth-child(2) {
+        display: block !important;
+        width: 100%; 
+        text-align: center;
+        float: right; 
+    }
+    .col-c:nth-child(3) {
+        display: none; 
+    } 
+    #about .section-heading h1::after {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }      
     /*-----------------Sections-----------------*/
 
     /* Video */
@@ -2401,7 +2462,6 @@ blockquote {
     }
 
 }
-
 /* Landscape Tablet to Desktop
 ===============================*/
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -2452,7 +2512,37 @@ blockquote {
     .slvj-lightbox iframe, .slvj-lightbox object, .slvj-lightbox embed {
         height: 432px !important;
     }
-
+    /* ------------------About Us---------------*/
+    #about {
+        background-image: url("../images/about-us-sm.png")!important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 20px !important;
+        /* background-position: left 0 !important; */
+    }
+    #about h1 {
+        font-size: 45px !important;
+        font-weight: 800 !important;
+    }
+    .col-c {
+        width: 100%;
+        margin-left: 80px;
+        margin-right: 80px; 
+    }
+    .col-c:nth-child(2) {
+        display: block !important;
+        width: 100%; 
+        text-align: center;
+        float: right; 
+    }
+    .col-c:nth-child(3) {
+        display: none; 
+    } 
+    #about .section-heading h1::after {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }     
 }
 
 /* Custom template css  */
@@ -2547,7 +2637,7 @@ a:hover, #header.nav-solid nav a:hover {
     color:#fff;    
 }
 
-.section-heading h2:after {
+.section-heading h1:after {
     background:#4FADC4;
     content:"";
     display:block;
@@ -2556,7 +2646,11 @@ a:hover, #header.nav-solid nav a:hover {
     margin-top:30px;
 }
 
-.text-center .section-heading h2:after {
+.primary-text-color {
+    color:#4FADC4;
+}
+
+.text-center .section-heading h1:after {
     margin:30px auto 25px auto;
 }
 
@@ -2796,9 +2890,17 @@ h6 {
 #landing-footer i {
     color:#999;
 }
-/* Services  css*/
-#services {
-    background-image: url("assets/images/about-us-bg.png");
+/*------------------------------------------------------------------------------------------*/
+/* About Us  */
+/*------------------------------------------------------------------------------------------*/
+
+#about {
+    background-image: url("../images/about-us-bg.png");
     background-repeat: no-repeat;
+    background-position: left 0 !important;
+}
+#about h1 {
+    font-size: 45px !important;
+    font-weight: 800 !important;
 }
 
