@@ -2201,9 +2201,10 @@ blockquote {
         line-height: 65px !important;
 
     }
-    /* .section-heading {
+    .col-60 {
         padding-top: 3rem;
-    } */
+        /* margin-left: 1.5rem; */
+    }
 }
 
 /* Landscape mobile & down
@@ -2235,6 +2236,19 @@ blockquote {
     /*-----------------Header Elements-----------------*/
     #header .row {
         padding: 0 15px !important;
+    }
+    
+    .col-60 {
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .section-heading {
+        width: 100%;
+    }
+    #banner .section-heading:before,
+    .section-heading h1:after {
+        display: block;
+        margin: 0 auto;
     }
 
     #header.nav-solid [class*="col-"] {
@@ -2404,7 +2418,17 @@ blockquote {
         background-color: #fff;
     }
     .section-heading {
-        padding-top: 3rem;
+        /* padding-top: 1rem; */
+        width: 100%;
+    }
+    .col-60 {
+        text-align: center;
+        margin-top: 5rem;
+    }
+    #banner .section-heading:before,
+    .section-heading h1:after {
+        display: block;
+        margin: 0 auto;
     }
     /*Navigation*/
     nav#nav-mobile ul {
