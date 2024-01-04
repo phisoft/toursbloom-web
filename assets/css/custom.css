@@ -514,6 +514,7 @@ section {
 }
 
 #header.nav-solid nav a {
+    color: #3D576F;
     border-bottom: 3px solid;
     border-color: #fff;
     -webkit-transition: all 0.3s ease-out;
@@ -998,9 +999,13 @@ h6 {
 }
 .Feautes .single-features h3{
 	padding-top: 128px;
-	color:#2C2D3F;
+	color:#3D576F;
 	font-weight:500;
 	font-size:21px;
+}
+
+.Feautes .wcu {
+    color: #3D576F;
 }
 /* .Feautes .single-features p {
 	margin-top: 20px;
@@ -2760,7 +2765,7 @@ body {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:18px;
     font-weight:300;
-    color:#111;
+    color:#3D576F;
     width: 50%;
 }
 
@@ -2852,14 +2857,14 @@ h6 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:14px;
     font-weight:bold;
-    color:#111;
+    color:#3D576F;
 }
 
 
 /* Button Color */
 
 .button, input[type="submit"] {
-    border-color:#111;
+    border-color:#3D576F;
 }
 
 
@@ -2879,16 +2884,8 @@ h6 {
 #banner .button {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:16px;
-    color:#111;
+    color:#3D576F;
 }
-
-
-/* Button Color */
-
-#banner .button {
-    border-color:#111;
-}
-
 
 /* Button Hover Color */
 
@@ -2924,7 +2921,11 @@ h6 {
     background-position: left 0 !important;
 }
 #about h1 {
+    color: #3D576F;
     font-size: 45px !important;
     font-weight: 800 !important;
 }
 
+#about p {
+    color: #3D576F;
+}
