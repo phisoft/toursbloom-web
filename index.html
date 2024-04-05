@@ -429,31 +429,31 @@
           <!-- ***** Contact Form Start ***** -->
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="contact-form">
-              <form action="https://formsubmit.co/hello@phisoft.my" method="POST">
+              <form onsubmit="sendEmail(); reset(); return false;">
                 <div class="row  p-0">
                   <div class="col-md-12 col-sm-12 p-0">
                     <fieldset>
-                      <input name="name" type="text" id="name" placeholder="Full Name" required="">
+                      <input class="demo-input"name="name" type="text" id="name" placeholder="Full Name" required="">
                     </fieldset>
                   </div>
                   <div class="col-md-6 col-sm-12" style="padding: 0 20px 0 0;">
                     <fieldset>
-                      <input name="Phone" type="tel" id="phone" placeholder="Phone Number" required="">
+                      <input class="demo-input" name="Phone" type="tel" id="phone" placeholder="Phone Number" required="">
                     </fieldset>
                   </div>
                   <div class="col-md-6 col-sm-12 p-0">
                     <fieldset>
-                      <input name="email" type="text" id="email" placeholder="E-Mail Address" required="">
+                      <input class="demo-input" name="email" type="text" id="email" placeholder="E-Mail Address" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12 p-0">
                     <fieldset>
-                      <textarea name="message" rows="6" id="message" placeholder="Your Message" required=""></textarea>
+                      <textarea class="demo-input" name="message" rows="6" id="message" placeholder="Your Message" required=""></textarea>
                     </fieldset>
                   </div>
                   <div class="col-lg-12 p-0">
                     <fieldset>
-                      <button type="submit" id="form-submit" class="main-button">Send Message
+                      <button onclick="sendEmail();" type="button" id="form-submit" class="main-button">Send Message
                         Now</button>
                     </fieldset>
                   </div>
@@ -516,5 +516,41 @@
   <script src="assets/vendor/header/images-loaded.min.js"></script>
   <script src="assets/vendor/header/lightbox.min.js"></script>
   <script src="assets/vendor/header/site.js"></script> 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+		function sendEmail() {
+			if (validateForm()) {
+				Email.send({
+					Host: "smtp.elasticemail.com",
+					Username: "phisoft.marketing@gmail.com",
+					Password: "54C6C6E3B10D11FB45C043A9F15C1AFDCA0F",
+					To: 'hello@phisoft.my',
+					From: "phisoft.marketing@gmail.com",
+					Subject: "Toursbloom Contact Form Submission",
+					Body: "Name: " + document.getElementById("name").value +
+						"<br> Phone Number: " + document.getElementById("phone").value +
+						"<br> Email: " + document.getElementById("email").value +
+						"<br> Message: " + document.getElementById("message").value
+				}).then(
+					message => alert("Message successfully sent.")
+				);
+			} else {
+				alert("Please fill in all required fields.");
+			}
+		}
+		function validateForm() {
+			var isValid = true;
+			var inputs = document.getElementsByClassName('demo-input');
+			for (var i = 0; i < inputs.length; i++) {
+				if (!inputs[i].value) {
+					isValid = false;
+					inputs[i].classList.add('is-invalid');
+				} else {
+					inputs[i].classList.remove('is-invalid');
+				}
+			}
+			return isValid;
+		}
+	</script>
 
 </html>
