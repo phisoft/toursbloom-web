@@ -1351,3 +1351,7 @@ nav#nav-mobile a:hover {
 .mb-50{
   margin-bottom: 50px;
 }
+
+#contact-us{
+  height: fit-content;
+}
