@@ -417,7 +417,7 @@
           <!-- ***** Contact Form Start ***** -->
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="contact-form">
-              <form id="contact-form" action="https://send.bah.my/aGVsbG9AcGhpc29mdC5teQ==" enctype="application/x-www-form-urlencoded" method="POST">
+              <form id="contact-form" action="https://send.bah.my/phisoft" enctype="application/x-www-form-urlencoded" method="POST">
                 <div class="row  p-0">
                   <div class="col-md-12 col-sm-12 p-0">
                     <fieldset>
@@ -546,26 +546,6 @@
   <script src="assets/vendor/header/site.js"></script> 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script>
-		function sendEmail() {
-			if (validateForm()) {
-				Email.send({
-					Host: "smtp.elasticemail.com",
-					Username: "phisoft.marketing@gmail.com",
-					Password: "54C6C6E3B10D11FB45C043A9F15C1AFDCA0F",
-					To: 'hello@phisoft.my',
-					From: "phisoft.marketing@gmail.com",
-					Subject: "Toursbloom Contact Form Submission",
-					Body: "Name: " + document.getElementById("name").value +
-						"<br> Phone Number: " + document.getElementById("phone").value +
-						"<br> Email: " + document.getElementById("email").value +
-						"<br> Message: " + document.getElementById("message").value
-				}).then(
-					message => alert("Message successfully sent.")
-				);
-			} else {
-				alert("Please fill in all required fields.");
-			}
-		}
 		function validateForm() {
 			var isValid = true;
 			var inputs = document.getElementsByClassName('demo-input');
