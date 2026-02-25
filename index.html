@@ -1,571 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
+    <meta
+      name="description"
+      content="Toursbloom modern tour operations platform for bookings, packages, promotions, and agent management."
+    />
+    <meta
+      name="keywords"
+      content="tour management software, booking platform, package management, tourism operations, sabah tours"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Toursbloom - Modern Tour Operations Platform" />
+    <meta
+      property="og:description"
+      content="Manage bookings, packages, promotions, and agents in one modern platform built for tour operators."
+    />
+    <meta property="og:url" content="https://www.toursbloom.com/" />
+    <meta property="og:site_name" content="Toursbloom" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://www.toursbloom.com/assets/images/favicon.png" />
+    <meta property="og:image:secure_url" content="https://www.toursbloom.com/assets/images/favicon.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Toursbloom" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Toursbloom - Modern Tour Operations Platform" />
+    <meta
+      name="twitter:description"
+      content="All-in-one tour management workspace for bookings, packages, promotions, and daily operations."
+    />
+    <meta name="twitter:image" content="https://www.toursbloom.com/assets/images/favicon.png" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="Toursbloom" />
+    <meta name="theme-color" content="#4f46e5" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="canonical" href="https://www.toursbloom.com/" />
+    <link rel="icon" href="assets/images/favicon.png" sizes="42x42" type="image/png" />
+    <link rel="preload" as="image" href="assets/images/dashboard.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Web SEO -->
-  <meta name="description"
-    content="Streamline your tour management with Toursbloom! Our all-in-one software offers a user-friendly dashboard and powerful agent features to manage bookings, finances and clients effortlessly." />
-  <meta name="keywords"
-    content="tour package software, tour management system, tour operator system, tour agency management platform, tourism, tourism in Sabah, Kota Kinabalu, itinerary builder, borneo travel agency">
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Toursbloom">
-  <meta property="og:image" content="https://www.toursbloom.com/assets/images/favicon.png">
-  <meta property="og:image:width" content="150" />
-  <meta property="og:image:height" content="100" />
-  <meta property="og:image:secure_url" content="https://www.toursbloom.com/assets/images/favicon.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:alt" content="Toursbloom" />
+    <title>Toursbloom | Tour Management Software for Bookings, Packages & Promotions</title>
 
-  <meta name="author" content="Toursbloom">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link rel="icon" href="assets/images/favicon.png" sizes="42x42" type="image/png">
-  <link rel="preload" as="image" href="assets/images/logo.svg">
-  <title>Toursbloom - Tours Package Management</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Toursbloom",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://www.toursbloom.com/",
+        "description": "Toursbloom is a web-based tour operations platform for managing bookings, packages, promotions, and agent workflows.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Toursbloom"
+        }
+      }
+    </script>
+  </head>
 
-  <!-- Additional CSS Files -->
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-  <link rel="stylesheet" href="assets/css/templatemo-lava.css">
-  <link rel="stylesheet" href="assets/css/owl-carousel.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
-  <link rel="stylesheet" href="assets/css/theme.css">
-<style>
-.col-a {
-  width: 100%;
-  padding-right: 0;
-  padding-left: 0;
-}
-</style>
-</head>
+  <body>
+    <a class="tb-skip-link" href="#main-content">Skip to content</a>
 
-<body>
-  <a class="skip-link" href="#maincontent" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+    <header class="tb-header" id="top">
+      <div class="tb-shell tb-header-inner">
+        <a class="tb-brand" href="#top" aria-label="Toursbloom home">
+          <img src="assets/images/logo.svg" alt="Toursbloom logo" />
+        </a>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="preloader">
-    <div class="jumper">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
+        <nav class="tb-nav" aria-label="Primary navigation">
+          <a href="#features">Features</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#about">About</a>
+        </nav>
 
-
-  <!-- ***** Header Area Start ***** -->
-  <header id="banner" class="scrollto clearfix vh-100" data-enllax-ratio=".5">
-    <div id="header" class="nav-collapse  nav-solid fadeInDown">
-        <div class="row clearfix">
-            <div class="col-a">
-
-                <!--Logo-->
-                <div id="logo">
-
-                    <!--Logo that is shown on the banner-->
-                    <!-- <img src="/toursbloom-web/assets/images/favicon.png" id="banner-logo" alt="Landing Page"/> -->
-                    <!--End of Banner Logo-->
-
-                    <!--The Logo that is shown on the sticky Navigation Bar-->
-                    <a href="index.html">
-                      <img src="assets/images/logo.svg" id="navigation-logo" alt="Landing Page"/>
-                    </a>
-                    <!--End of Navigation Logo-->
-
-                </div>
-                <!--End of Logo-->
-
-                <aside>
-
-                    <!--Social Icons in Header-->
-                    <ul class="social-icons">
-                        <li>
-                            <a target="_blank" rel="noopener noreferrer" title="Facebook" href="https://www.facebook.com/phisoft.my/">
-                                <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" rel="noopener noreferrer" title="Website" href="https://www.phisoft.my/">
-                                <i class="fa fa-globe fa-1x"></i><span>Website</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" rel="noopener noreferrer" title="Twitter" href="https://www.linkedin.com/company/phisoft-my/">
-                                <i class="fa fa-linkedin fa-1x"></i><span>Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" rel="noopener noreferrer" title="Instagram" href="https://www.instagram.com/phisoft.my/">
-                                <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-                            </a>
-                        </li>
-                        <!-- <li>
-                            <a target="_blank" title="behance" href="http://www.behance.net">
-                                <i class="fa fa-behance fa-1x"></i><span>Behance</span>
-                            </a>
-                        </li> -->
-                    </ul>
-                    <!--End of Social Icons in Header-->
-
-                </aside>
-
-                <!--Main Navigation-->
-                <nav id="nav-main" role="navigation" aria-label="Primary Navigation">
-                    <ul>
-                        <li>
-                            <a href="#banner">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <!-- <li>
-                            <a href="#gallery">Gallery</a>
-                        </li> -->
-                        <li>
-                            <a href="#service">Features</a>
-                        </li>
-                        <li>
-                            <a href="#contact-us">Contact Us</a>
-                        </li>
-                        <!-- <li>
-                            <a href="#clients">Clients</a>
-                        </li> -->
-                        <!-- <li>
-                            <a href="#pricing">Pricing</a>
-                        </li> -->
-                    </ul>
-                </nav>
-                <!--End of Main Navigation-->
-
-                <div id="nav-trigger"><span></span></div>
-                <nav id="nav-mobile" role="navigation" aria-label="Mobile Navigation"></nav>
-
-            </div>
-        </div>
-    </div><!--End of Header-->
-
-    <!--Banner Content-->
-    <div id="banner-content home" class="row clearfix" data-scroll-reveal="enter left move 30px over 0.8s after 0.5s">
-
-        <div class="col-60"> 
-
-            <div class="section-heading">
-                <h1>Optimize Tours, Simplify Operations</h1>
-                <h2>Transform your tour business with<span class="custom-title"> Toursbloom</span>, an all-in-one solution.</h2>
-            </div>
-
-            <!--Call to Action-->
-            <a href="#about" class="button">LEARN MORE</a>
-            <!--End Call to Action-->
-
-        </div>
-
-    </div><!--End of Row-->
-  </header>    
-  <!-- ***** Header Area End ***** -->
-  <main id="site-main" role="main">
-
-  <!-- ***** Features About Start ***** -->
-  <section id="maincontent" class="features section mb-4">
-    <div class="container">
-      <div class="row p-0">
-        <div class="col-lg-12">
-          <div class="section-title" data-scroll-reveal="enter top move 30px over 0.6s after 0.4s">
-            <h2 class="text-bold mt-5 wcu">Why Choose Us</h2>
-            <img class="favicon" src="assets/images/favicon.png" alt="#">
-            <p data-scroll-reveal="enter top move 30px over 0.7s after 0.4s">Elevate your tour operations and create unforgettable experiences with our comprehensive platform.</p>
-          </div>
-        </div>
+        <a class="tb-btn tb-btn-primary" href="#contact">Request demo</a>
       </div>
-      <div class="row p-0">
-        <div class="col-lg-4 col-12" data-scroll-reveal="enter left move 30px over 0.9s after 0.6s">
-          <!-- Start Single features -->
-          <div class="single-features">
-            <div class="signle-icon">
-              <i class="fa fa-mobile" aria-hidden="true"></i>
-            </div>
-            <h3>Responsive Design</h3>
-            <!-- <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p> -->
-          </div>
-          <!-- End Single features -->
-        </div>
-        <div class="col-lg-4 col-12" data-scroll-reveal="enter bottom move 30px over 0.8s after 0.5s">
-          <!-- Start Single features -->
-          <div class="single-features">
-            <div class="signle-icon">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
-            </div>
-            <h3>Save Time Organizing</h3>
-            <!-- <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p> -->
-          </div>
-          <!-- End Single features -->
-        </div>
-        <div class="col-lg-4 col-12" data-scroll-reveal="enter right move 30px over 0.9s after 0.6s">
-          <!-- Start Single features -->
-          <div class="single-features last">
-            <div class="signle-icon">
-              <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-            </div>
-            <h3>Easy-To-Use</h3>
-            <!-- <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p> -->
-          </div>
-          <!-- End Single features -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ***** Features About End ***** -->
+    </header>
 
-  <!-- ***** About Us Start ***** -->
-  <div id="about" class="scrollto mt-5" data-enllax-ratio=".5">
-
-    <div class="row no-padding-bottom pt-0">
-
-
-        <!--Content Left Side-->
-        <div class="col-c">
-            <!--User Testimonial-->
-            <!-- <blockquote class="testimonial text-right bigtest">
-                <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore
-                    et dolore magna aliqua</q>
-                <footer>— John Doe, Happy Customer</footer>
-            </blockquote> -->
-            <!-- End of Testimonial-->
-
-        </div>
-        <!--End Content Left Side-->
-
-        <!--Content of the Right Side-->
-        <div class="col-c" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-            <div class="section-heading w-100">
-                <!-- <h3>BELIEVING</h3> -->
-                <h1 class="section-title">About <span class="primary-text-color">Toursbloom</span></h1>
-                <!-- <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p> -->
-            </div>
-            <p class="mb-4">
-              <span class="primary-text-color text-bold">Toursbloom</span> is a tour package 
-              management software that 
-              <span class="text-bold">simplifies tour operations</span> and 
-              <span class="text-bold">enhances customer experiences.</span>
+    <main id="main-content">
+      <section class="tb-hero">
+        <div class="tb-shell tb-hero-grid">
+          <div class="tb-hero-copy">
+            <p class="tb-eyebrow">All-in-one platform</p>
+            <h1>Redesigned for modern tour operations</h1>
+            <p class="tb-lead">
+              Toursbloom helps agencies run bookings, packages, promotions, and agent coordination from one clean
+              workspace.
             </p>
-            <p class="mb-4">
-              It drives business growth through its 
-              comprehensive tour package 
-              management platform.
-            </p>
-            <p class="mb-4">
-              With <span class="primary-text-color text-bold">Toursbloom</span>, you can effortlessly 
-              manage your entire tour operation, 
-              from creating and viewing bookings, 
-              packages, and promotions to managing agents.
-            </p>
-            <p class="text-bold">
-              All in one centralized platform.
-            </p>
-        </div>
-        <!--End Content Right Side-->
-
-        <div class="col-c" data-scroll-reveal="enter right move 30px over 0.9s after 0.6s">
-            <img src="assets/images/about-us-right.png" alt="Dancer" loading="lazy" decoding="async" />
-            <!-- images/dancer.jpg -->
-        </div>
-
-    </div>
-
-
-</div>
-  <!-- ***** About Us End ***** -->
-
-
-  <!-- ***** Features Big Item Start ***** -->
-  <section class="section scrollto clearfix pb-0" id="service" data-enllax-ratio=".5">
-    <div class="">
-      <div class="center-heading mb-50">
-        <h2>How <em>Toursbloom</em> Works</h2>
-      </div>
-
-      <!-- Start Feature 1 -->
-      <section class="primary-theme-color">
-
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="left-image col-0 col-lg-7" data-scroll-reveal="enter bottom move 30px over 0.9s after 0.7s">
-              <img src="assets/images/feature-1-tag.png" class="img-fluid mb-4 mb-lg-0" alt="svg" loading="lazy" decoding="async">
+            <div class="tb-hero-actions">
+              <a class="tb-btn tb-btn-primary" href="#contact">Book a demo</a>
+              <a class="tb-btn tb-btn-ghost" href="#features">Explore features</a>
             </div>
-            <div data-scroll-reveal="enter right move 30px over 0.9s after 0.7s"
-              class="right-text col-lg-5 d-flex align-items-center">
-              <div id="booking">
-                <i class="fa fa-home icon color-secondary" aria-hidden="true"></i>
-                <h2 class="text-left color-primary fs-40"> Dashboard</h2><br>
-                <p class="text-justify color-secondary">
-                  From the Toursbloom dashboard, the admin can view the count of bookings for the upcoming two weeks
-                  through the graph shown.
-                  The admin can also know the summary of total bookings, total promotions, and available packages for
-                  the current day through the dashboard.
-                  <br>
-                  <br>
-                  Boost your day to day daily operation; <span class="color-primary text-bold">Bookings, Promotions,
-                    Packages</span> by just clicking the button as shown inside the dashboard.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-      <!-- End Feature 1 -->
-
-      <!-- Start Feature 2 -->
-      <section class="secondary-theme-color">
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="right-text col-lg-5 order-1 order-lg-0 d-flex align-items-center"
-              data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-              <div class="text mr-0 mr-lg-4" id="dashboard">
-                <i class="fa fa-calendar icon color-primary" aria-hidden="true"></i>
-                <h2 class="text-left color-secondary fs-40">Create and view Booking</h2><br>
-                <p class="text-justify">The admin can <span class="color-primary text-bold">view all bookings</span>
-                  made in calendar form on the Bookings page.
-                  Admin can filter the bookings by agent's name if they want to see a specific agent's booking.
-                  Admin can also create a new event on the bookings page by clicking the chosen date. </p>
-              </div>
-            </div>
-            <div class="right-image col-0 col-lg-7" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-              <img src="assets/images/feature-2-tag.png" class="img-fluid mb-4 mb-lg-0" alt="svg" loading="lazy" decoding="async">
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Feature 2 -->
-
-      <!-- Start Feature 3 -->
-      <section class="primary-theme-color">
-        <div class="container ">
-          <div class="row d-flex justify-content-center">
-            <div class="left-image col-0 col-lg-7" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-              <img src="assets/images/feature-3-tag.png" class="img-fluid mb-4 mb-lg-0" alt="svg" loading="lazy" decoding="async">
-            </div>
-            <div class="right-text col-lg-5 d-flex align-items-center"
-              data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-              <div class="text" id="dashboard">
-                <i class="fa fa-file-text icon color-secondary" aria-hidden="true"></i>
-                <h2 class="text-left color-primary fs-40">Create and view Package</h2><br>
-                <p class="text-justify">
-                  On the Packages page, the admin can <span class="color-primary text-bold"> view all available active
-                    packages</span>.
-                  Admin can add a new package by clicking the create button on the top-left side of the packages page.
-                  The admin can also set which agent will be assigned for the package in the package details.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Feature 3 -->
-
-      <!-- Start Feature 4 -->
-      <section class="secondary-theme-color height-130vh">
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="right-text col-lg-5 order-1 order-lg-0 d-flex align-items-center"
-              data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-              <div class="text" id="dashboard">
-                <i class="fa fa-users icon color-primary " aria-hidden="true"></i>
-                <h2 class="text-left color-secondary fs-40">Promotions & Agents</h2><br>
-                <p class="text-justify">
-                  Admin can <span class="color-primary text-bold">view all available promotions</span> on the promotions
-                  page and simply click create button to
-                  create new promotion.
-                  Only active or ongoing promotions will be shown on the promotions page.
-                  For the Agents page, active agents will be displayed and also can <span
-                    class="color-primary text-bold">add new agents</span> in just few steps.
-                </p>
-              </div>
-            </div>
-            <div class="right-image col-lg-7" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-              <img src="assets/images/feature-4-tag.png" class="img-fluid" alt="svg" loading="lazy" decoding="async">
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Feature 4 -->
-
-    </div>
-  </section>
-  <!-- ***** Features Big Item End ***** -->
-
-  <!-- ***** Form Start ***** -->
-  <section id="contact-us" class="scrollto clearfix" data-enllax-ratio=".5">
-    <div class="d-flex align-items-center container">
-      <div class="footer-image"></div>
-      <div class="footer-content">
-        <div class="row p-0">
-          <!-- ***** Contact Form End ***** -->
-          <div class="right-content col-lg-6 col-md-12 col-sm-12">
-            <h2>Want to know more about <em>Toursbloom</em></h2>
-            <!-- <p>PHI SOFTWARE SDN. BHD. <br> <br> -->
-              Email: info@toursbloom.com <br> <br>
-              Phone: +60 12 873 1819 <br> <br>
-              Address:<br>
-              H-8-10, Aeropod Commercial Square,
-              Jalan Aeropod Off Jalan Kepayan,
-              88200 Kota Kinabalu, Sabah, MY.
-            </p>
-          </div>
-          <!-- ***** Contact Form Start ***** -->
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="contact-form">
-              <form id="contact-form" action="https://send.bah.my/phisoft" enctype="application/x-www-form-urlencoded" method="POST">
-                <div class="row  p-0">
-                  <div class="col-md-12 col-sm-12 p-0">
-                    <fieldset>
-                      <input class="demo-input" name="name" type="text" id="name" placeholder="Name *" aria-label="Name" required>
-                    </fieldset>
-                  </div>
-                  <div class="col-md-6 col-sm-12 p-0 pr-3">
-                    <fieldset>
-                      <input class="demo-input" name="phone" type="text" id="phone" placeholder="Phone Number" aria-label="Phone Number">
-                    </fieldset>
-                  </div>
-                  <div class="col-md-6 col-sm-12 p-0">
-                    <fieldset>
-                      <input class="demo-input" name="email" type="text" id="email" placeholder="Email *" aria-label="Email" required>
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12 col-sm-12 p-0">
-                    <fieldset>
-                      <input class="demo-input" id="subject" name="subject" value="Contact Form Submission via Toursbloom.com" type="hidden" placeholder="Subject *" required>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12 p-0">
-                    <fieldset>
-                      <textarea class="demo-input" name="message" rows="6" id="message" placeholder="Your Message" aria-label="Your Message" required></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12 p-0">
-                    <fieldset>
-                      <button class="ht-btn ht-btn-md" id="form-submit" type="submit">Send message</button>
-                    </fieldset>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  </main>
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="footer-content">
-      <div class="container" style="border-bottom: 1px solid #1398B245;">
-        <div class="row align-items-lg-start pb-0">
-          <div class="col-lg-3 col-md-2 align-items-center">
-            <div class="d-flex"><img src="assets/images/logo.svg" alt="logo"></div>
-          </div>
-          <div class="col-lg-2 col-md-2 footer-links px-4">
-            <h4 class="mb-4 color-primary " style="font-weight: bolder;">Quick Link </h4>
-            <ul>
-              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="index.html#banner">Home</a></li>
-              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="index.html#about">About</a></li>
-              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="index.html#service">Features</a></li>
-              <li><i class="color-grey bi bi-chevron-right"></i> <a class="color-grey" href="index.html#contact-us">Contact</a></li>
+            <ul class="tb-bullets">
+              <li><i class="fa fa-check-circle" aria-hidden="true"></i> Real-time dashboard overview</li>
+              <li><i class="fa fa-check-circle" aria-hidden="true"></i> Structured package and promo control</li>
+              <li><i class="fa fa-check-circle" aria-hidden="true"></i> Faster daily team collaboration</li>
             </ul>
           </div>
-          <div class="col-lg-4 col-md-4 px-4">
-            <div class="footer-info">
-              <h4 class="color-primary mb-4" style="font-weight: bolder;">Our Info</h4>
-              <p class="color-grey">
-                <strong>Sales Office</strong>
-                <br>Lot 45, Lok Kawi Industrial Estate, PH2C, <br>
-                89580 Lok Kawi, Sabah, MY <br>
-                <br>
-                <strong>R & D Office</strong>
-                <br>H-8-10, Aeropod Commercial Square, <br>
-                Jalan Aeropod Off Jalan Kepayan, <br>
-                88200 Kota Kinabalu, Sabah, MY <br><br> 
-              </p>
+
+          <div class="tb-hero-media">
+            <div class="tb-screen-card">
+              <img src="assets/images/dashboard.svg" alt="Toursbloom dashboard interface" />
+            </div>
+            <div class="tb-floating-note">
+              <strong>Daily snapshot</strong>
+              <p>Track active bookings, package performance, and promo conversions in one place.</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 footer-links footer-info px-4">
-            <h4 class="color-primary" style="font-weight: bolder;">Contact Us</h4>
-            <div class="d-flex justify-content-start footer-sosmed mb-1">
-              <a href="https://www.facebook.com/phisoft.my/"><i class="bi bi-facebook color-primary"></i></a>
-              <a href="https://www.instagram.com/phisoft.my/"><i class="bi bi-instagram color-primary"></i></a>
-              <a href="https://www.phisoft.my/index.html"><i class="bi bi-globe2 color-primary"></i></a>
-              <a href="mailto:hello@phisoft.my"><i class="bi bi-envelope-fill color-primary"></i></a> 
+        </div>
+      </section>
+
+      <section class="tb-metrics">
+        <div class="tb-shell tb-metrics-grid">
+          <article class="tb-metric-card">
+            <h3>Faster operations</h3>
+            <p>Centralized tools remove repetitive work and improve team handover.</p>
+          </article>
+          <article class="tb-metric-card">
+            <h3>Clear visibility</h3>
+            <p>Live booking and package data helps managers make confident decisions.</p>
+          </article>
+          <article class="tb-metric-card">
+            <h3>Scalable process</h3>
+            <p>Designed to support growing agencies and multi-agent workflows.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tb-section" id="features">
+        <div class="tb-shell">
+          <div class="tb-section-head">
+            <p class="tb-eyebrow">Features</p>
+            <h2>Everything teams need to run modern tours</h2>
+            <p>Purpose-built modules that support planning, selling, and daily operations.</p>
+          </div>
+
+          <div class="tb-feature-grid">
+            <article class="tb-feature-card">
+              <img src="assets/images/features-booking.svg" alt="Booking calendar icon" />
+              <h3>Booking Calendar</h3>
+              <p>Manage dates, availability, and schedules with a visual booking timeline.</p>
+            </article>
+            <article class="tb-feature-card">
+              <img src="assets/images/features-package.svg" alt="Package management icon" />
+              <h3>Package Control</h3>
+              <p>Create and maintain packages with consistent pricing and assignment flows.</p>
+            </article>
+            <article class="tb-feature-card">
+              <img src="assets/images/features-promo.svg" alt="Promotion module icon" />
+              <h3>Promotion Engine</h3>
+              <p>Launch campaign offers and monitor conversion signals across the platform.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="tb-section tb-section-soft" id="workflow">
+        <div class="tb-shell">
+          <div class="tb-section-head">
+            <p class="tb-eyebrow">Workflow</p>
+            <h2>Simple daily process for every team</h2>
+          </div>
+
+          <div class="tb-steps-grid">
+            <article class="tb-step-card">
+              <span>01</span>
+              <h4>Review dashboard</h4>
+              <p>Start the day with updates on bookings, package status, and sales activity.</p>
+            </article>
+            <article class="tb-step-card">
+              <span>02</span>
+              <h4>Update bookings</h4>
+              <p>Confirm schedules and customer requirements with clear operational context.</p>
+            </article>
+            <article class="tb-step-card">
+              <span>03</span>
+              <h4>Manage inventory</h4>
+              <p>Adjust package details, assignment, and availability in minutes.</p>
+            </article>
+            <article class="tb-step-card">
+              <span>04</span>
+              <h4>Optimize campaigns</h4>
+              <p>Evaluate promotions and improve future offers using live performance data.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="tb-section" id="about">
+        <div class="tb-shell">
+          <div class="tb-about-card">
+            <p class="tb-eyebrow">About Toursbloom</p>
+            <h2>Built for agencies in Sabah and beyond</h2>
+            <p>
+              Toursbloom is designed for tour operators that need cleaner workflows and stronger coordination between
+              teams, agents, and management.
+            </p>
+            <p>
+              The platform unifies booking workflows, package maintenance, and promotions so operations stay reliable
+              as your business grows.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tb-section tb-section-soft" id="contact">
+        <div class="tb-shell tb-contact-layout">
+          <div class="tb-contact-copy">
+            <p class="tb-eyebrow">Contact</p>
+            <h2>Request a personalized demo</h2>
+            <p>See how Toursbloom can modernize your tour operation with one connected system.</p>
+          </div>
+
+          <form
+            class="tb-contact-form"
+            id="contact-form"
+            action="https://send.bah.my/phisoft"
+            enctype="application/x-www-form-urlencoded"
+            method="POST"
+          >
+            <label for="name">Name *</label>
+            <input name="name" type="text" id="name" placeholder="Your name" required />
+
+            <div class="tb-form-row">
+              <div>
+                <label for="phone">Phone</label>
+                <input name="phone" type="text" id="phone" placeholder="Your phone number" />
+              </div>
+              <div>
+                <label for="email">Email *</label>
+                <input name="email" type="email" id="email" placeholder="Your email" required />
+              </div>
             </div>
-          <p class="color-grey">Phone: +60 12 873 1819</p>
-          <p class="color-grey">Email: info@toursbloom.com</p>
-          </div>    
+
+            <input type="hidden" id="subject" name="subject" value="Contact Form Submission via Toursbloom.com" />
+
+            <label for="message">Message *</label>
+            <textarea name="message" id="message" rows="6" placeholder="Tell us about your tour operation" required></textarea>
+
+            <button class="tb-btn tb-btn-primary" id="form-submit" type="submit">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="tb-footer">
+      <div class="tb-shell tb-footer-inner">
+        <div class="tb-footer-brand">
+          <img src="assets/images/logo.svg" alt="Toursbloom logo" />
+          <p>
+            Toursbloom is a modern tour management platform for bookings, package management, promotions, and team
+            operations.
+          </p>
+        </div>
+
+        <div class="tb-footer-social">
+          <a href="https://www.facebook.com/phisoft.my/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/phisoft-my/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/phisoft.my/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://www.phisoft.my/" target="_blank" rel="noopener noreferrer" aria-label="Website">
+            <i class="fa fa-globe"></i>
+          </a>
         </div>
       </div>
-      <div class="footer-legal footer-info text-center">
-          <div class="copyright color-grey">
-            <p class="mt-lg-4 mt-md-5 mt-sm-5"> Copyright &copy; 2024 Toursbloom. All Rights Reserved.</p>
-          </div>
-          <div class="credits">
-          </div>
-        </div>
+
+      <div class="tb-shell tb-footer-bottom">
+        <p>Copyright &copy; 2026 Toursbloom. All rights reserved.</p>
       </div>
+    </footer>
+
+    <div class="tb-floating-contact">
+      <a href="https://wa.me/60128731819" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <span>Contact Us</span>
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      </a>
     </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <!-- jQuery -->
-  <script defer src="assets/js/jquery.1.8.3.min.js"></script>
-  
-
-  <!-- Bootstrap -->
-  <script defer src="assets/js/popper.js"></script>
-  <script defer src="assets/js/bootstrap.min.js"></script>
-
-  <!-- Plugins -->
-  <script defer src="assets/js/owl-carousel.js"></script>
-  <script defer src="assets/js/scrollreveal.min.js"></script>
-  <script defer src="assets/js/waypoints.min.js"></script>
-  <script defer src="assets/js/jquery.counterup.min.js"></script>
-  <script defer src="assets/js/imgfix.min.js"></script>
-
-  <!-- Global Init -->
-  <script defer src="assets/js/custom.js"></script>
-
-  <script defer src="assets/vendor/header/wow.min.js"></script>
-  <script defer src="assets/vendor/header/featherlight.min.js"></script>
-  <script defer src="assets/vendor/header/featherlight.gallery.min.js"></script>
-  <script defer src="assets/vendor/header/jquery.enllax.min.js"></script>
-  <script defer src="assets/vendor/header/jquery.scrollUp.min.js"></script>
-  <script defer src="assets/vendor/header/jquery.easing.min.js"></script>
-  <script defer src="assets/vendor/header/jquery.stickyNavbar.min.js"></script>
-  <script defer src="assets/vendor/header/jquery.waypoints.min.js"></script>
-  <script defer src="assets/vendor/header/images-loaded.min.js"></script>
-  <script defer src="assets/vendor/header/lightbox.min.js"></script>
-  <script defer src="assets/vendor/header/site.js"></script> 
-<script>
-function validateForm() {
-var isValid = true;
-var inputs = document.getElementsByClassName('demo-input');
-for (var i = 0; i < inputs.length; i++) {
-if (!inputs[i].value) {
-isValid = false;
-inputs[i].classList.add('is-invalid');
-} else {
-inputs[i].classList.remove('is-invalid');
-}
-}
-return isValid;
-}
-</script>
-
+  </body>
 </html>
