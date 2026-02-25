@@ -9,6 +9,7 @@
       content="Privacy Policy for Toursbloom explaining how personal data is collected, used, and protected."
     />
     <link rel="icon" href="assets/images/favicon.png" sizes="42x42" type="image/png" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <style>
       .legal-wrap {
@@ -37,15 +38,25 @@
     </style>
   </head>
   <body>
+    <a class="tb-skip-link" href="#main-content">Skip to content</a>
+
     <header class="tb-header" id="top">
       <div class="tb-shell tb-header-inner">
         <a class="tb-brand" href="index.html" aria-label="Toursbloom home">
           <img src="assets/images/logo.svg" alt="Toursbloom logo" />
         </a>
+
+        <nav class="tb-nav" aria-label="Primary navigation">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#workflow">Workflow</a>
+          <a href="index.html#about">About</a>
+        </nav>
+
+        <a class="tb-btn tb-btn-primary" href="index.html#contact">Request demo</a>
       </div>
     </header>
 
-    <main class="legal-wrap">
+    <main id="main-content" class="legal-wrap">
       <article class="legal-card">
         <h1>Privacy Policy</h1>
         <p>Last updated: 26 February 2026</p>
@@ -94,5 +105,48 @@
         </p>
       </article>
     </main>
+
+    <footer class="tb-footer">
+      <div class="tb-shell tb-footer-inner">
+        <div class="tb-footer-brand">
+          <img src="assets/images/logo.svg" alt="Toursbloom logo" />
+          <p>
+            Toursbloom is a modern tour management platform for bookings, package management, promotions, and team
+            operations.
+          </p>
+        </div>
+
+        <div class="tb-footer-social">
+          <a href="https://www.facebook.com/phisoft.my/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/phisoft-my/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/phisoft.my/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://www.phisoft.my/" target="_blank" rel="noopener noreferrer" aria-label="Website">
+            <i class="fa fa-globe"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="tb-shell tb-footer-bottom">
+        <p>Copyright &copy; 2026 Toursbloom. All rights reserved.</p>
+        <p class="tb-footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <span aria-hidden="true"> • </span>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+
+    <div class="tb-floating-contact">
+      <a href="https://wa.me/60128731819" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <span>Contact Us</span>
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      </a>
+    </div>
   </body>
 </html>
