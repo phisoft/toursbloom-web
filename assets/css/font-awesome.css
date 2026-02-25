@@ -36,3 +36,6 @@
 .fa-whatsapp::before {
   content: "\f232";
 }
+.fa-envelope::before {
+  content: "\f0e0";
+}
