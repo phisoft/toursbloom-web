@@ -518,6 +518,11 @@ a {
 
 .tb-footer-bottom {
   padding-top: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
 }
 
 .tb-footer-bottom p {
@@ -526,10 +531,15 @@ a {
   font-size: 0.87rem;
 }
 
+.tb-footer-legal {
+  margin-left: auto;
+  text-align: right;
+}
+
 .tb-floating-contact {
   position: fixed;
   right: 18px;
-  bottom: 18px;
+  bottom: 86px;
   z-index: 45;
 }
 
@@ -653,9 +663,19 @@ a {
     padding: 3.6rem 0;
   }
 
+  .tb-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tb-footer-legal {
+    margin-left: 0;
+    text-align: left;
+  }
+
   .tb-floating-contact {
     right: 12px;
-    bottom: 12px;
+    bottom: 84px;
   }
 
   .tb-floating-contact a {
