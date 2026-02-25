@@ -138,6 +138,22 @@ a {
   background: linear-gradient(135deg, var(--tb-primary-strong), var(--tb-primary));
 }
 
+.tb-header .tb-btn-primary {
+  color: var(--tb-primary-strong);
+  background: #ffffff;
+  border: 1px solid #bde3ea;
+  border-radius: 16px;
+  box-shadow: none;
+}
+
+.tb-header .tb-btn-primary:hover,
+.tb-header .tb-btn-primary:focus-visible {
+  transform: none;
+  background: #ecfbfe;
+  border-color: var(--tb-primary);
+  box-shadow: 0 0 0 4px rgba(19, 142, 164, 0.14);
+}
+
 .tb-btn-ghost {
   color: var(--tb-primary-strong);
   background: #e8f7fa;
