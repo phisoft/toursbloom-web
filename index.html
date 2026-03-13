@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>Toursbloom | Tour Management Software for Bookings, Packages & Promotions</title>
-
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -249,7 +249,7 @@
 
             <label for="message">Message *</label>
             <textarea name="message" id="message" rows="6" placeholder="Tell us about your tour operation" required></textarea>
-
+            <div id="turnstile-container"></div>
             <button class="tb-btn tb-btn-primary" id="form-submit" type="submit">Send message</button>
           </form>
         </div>
@@ -298,5 +298,13 @@
         <i class="fa fa-whatsapp" aria-hidden="true"></i>
       </a>
     </div>
+    <script>
+      const widgetId = turnstile.render("#turnstile-container", {
+      sitekey: "0x4AAAAAAARepDlzRUeiygytt",
+      callback: function (token) {
+        console.log("Success:", token);
+      },
+    });
+    </script>
   </body>
 </html>
